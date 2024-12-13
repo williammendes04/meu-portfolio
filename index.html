@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="img/icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>William Mendes</title>
+</head>
+
+<body>
+    <div class="grid-container">
+        <header>
+            <div>
+                <h1>WILLIAM</h1>
+                <h1>MENDES</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="portfolio.html">Portfólio</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="video-container">
+                <video autoplay muted loop class="bg-video">
+                    <source src="img - 02/filme-site-background.mov" type="video/mp4">
+                    Seu navegador não suporta a tag de vídeo.
+                </video>
+                <div class="content">
+                    <h1>Bem-vindo ao Nosso Site</h1>
+                    <a href="contato.html" class="cta-button">Saiba Mais</a>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <section>
+                <div class="icon-text">
+                    <a href="https://www.behance.net/williammendes5" target="_blank" rel="noopener noreferrer">
+                        <img src="img - 02/behance.svg" alt="Behance">
+                    </a>
+                    <p>Behance</p>
+                </div>
+                <div class="icon-text">
+                    <a href="https://www.instagram.com/pemape.oficial?igsh=cnBoaHN4dTAzODIz" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="img - 02/instagram.svg" alt="Instagram">
+                    </a>
+                    <p>Instagram</p>
+                </div>
+                <div class="icon-text">
+                    <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+                        <img src="img - 02/youtube.svg" alt="YouTube">
+                    </a>
+                    <p>YouTube</p>
+                </div>
+            </section>
+
+            <section>
+                <P>
+                    © Copyright 20204 William Mendes. Todos os direitos reservados <br> <br> CNPJ: ************* 
+                </P>
+            </section>
+        </footer>
+
+    </div>
+
+    <script>
+        document.addEventListener('scroll', function() {
+            var header = document.querySelector('header');
+            if (window.scrollY > 0) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+        </script>
+
+</body>
+
+</html>

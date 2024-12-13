@@ -1,0 +1,166 @@
+body {
+
+  background-color: #cccccc;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+  padding: 0%;
+
+}
+
+.grid-container {
+
+  background-color: #ecf1ff;
+  display: flex;
+  flex-direction: column;
+
+}
+
+/*  CABECALHO | NAVEGACÃO  */
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ffffff;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: background-color 0.3s ease, backdrop-filter 0.3s ease; /* Transição suave */
+}
+
+header.scrolled {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%);
+  backdrop-filter: blur(30px); /* Efeito de desfoque */
+}
+
+
+header li :hover{
+  color: #f26640;
+  font-weight: bold;
+  
+}
+
+header a{
+  color: #000;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+header h1 {
+  line-height: 10px;
+  margin: 20px;
+}
+
+li {
+  display: inline-block;
+  margin: 20px;
+}
+
+
+
+/*  MAIN - INFORMAÇÃO GERAL  */
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: white;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+main h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  padding: 15px 30px;
+  font-size: 1.2em;
+  color: white;
+  background-color: #f26640;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #639ad4;
+}
+
+
+
+/*  FOOTER  */
+
+footer {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  background-color: #2c327e;
+  display: flex;
+  flex-direction: column;
+}
+
+footer section {
+  background-color: #2c327e;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+footer P{
+  color: #ffffff;
+  padding-top: 20px;
+  font-size: 8pt;
+  text-align: center;
+}
+
+footer section div {
+  padding: 5px;
+}
+
+footer img {
+  width: 40px;
+}
+
+.icon-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Centraliza os itens no eixo vertical */
+}
+
+.icon-text p {
+  margin: 0;
+  /* Remove margens dos parágrafos */
+  padding-top: 0px;
+  /* Espaço entre ícone e texto */
+  color: aliceblue;
+  font-size: 8pt;
+}
